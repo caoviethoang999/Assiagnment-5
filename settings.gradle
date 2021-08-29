@@ -1,0 +1,2 @@
+rootProject.name = "HoangCV2_Note"
+include ':app'

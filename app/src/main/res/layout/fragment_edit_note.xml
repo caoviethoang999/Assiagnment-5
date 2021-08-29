@@ -1,0 +1,76 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".AddListNoteFragment">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_200"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txttitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/textview_margin_start"
+            android:layout_marginTop="@dimen/textview_title_margin_top"
+            android:text="@string/textview_title"
+            android:textSize="@dimen/textview_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar3" />
+
+        <EditText
+            android:id="@+id/edttitle1"
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_text"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txttitle1" />
+
+        <TextView
+            android:id="@+id/txtdes1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/textview_margin_start"
+            android:layout_marginTop="@dimen/textview_des_margin_top"
+            android:text="@string/textview_des"
+            android:textSize="@dimen/textview_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edttitle1" />
+
+        <EditText
+            android:id="@+id/edtdes1"
+            android:layout_width="@dimen/edittext_width"
+            android:layout_height="@dimen/edittext_des_height"
+            android:background="@drawable/background_text"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtdes1" />
+
+        <com.example.hoangcv2_note.view.ButtonCustomView
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/customview_button_add_height"
+            android:layout_marginTop="@dimen/customview_button_add_margin_top"
+            app:Imagesrc="@drawable/index2"
+            app:Text_Color="#C13F16"
+            app:Title="@string/customview_button_save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtdes1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
